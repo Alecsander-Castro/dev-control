@@ -15,8 +15,6 @@ export function Header({}: HeaderProps) {
     await signOut();
   };
 
-  console.log(data);
-
   return (
     <header
       data-testid="header"
@@ -29,7 +27,7 @@ export function Header({}: HeaderProps) {
             className="font-bold text-2xl pl-1 hover:tracking-widest duration-300"
           >
             <span className="text-blue-500">DEV</span>
-            CONTROLE
+            CONTROL
           </h1>
         </Link>
         {status === "loading" && (
